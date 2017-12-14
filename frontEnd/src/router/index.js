@@ -6,6 +6,7 @@ import Full from '@/containers/Full'
 
 // Views
 import Dashboard from '@/views/Dashboard'
+import CompatibilityTest from '@/views/CompatibilityTest'
 
 Vue.use(Router)
 
@@ -24,9 +25,12 @@ export default new Router({
           path: 'dashboard',
           name: 'Dashboard',
           component: Dashboard
-        }
-
-      ]
+        },
+        {
+          path: 'compatibilityTest',
+          name: 'CompatibilityTest',
+          component: CompatibilityTest
+        }]
     }
   ]
 })

@@ -1,9 +1,12 @@
 <template>
-  <ol class="breadcrumb">
+<div>
+  <ol class="breadcrumb" style="position: relative; align-items: center">
     <li class="breadcrumb-item" v-for="(item, index) in list"><span class="active" v-if="isLast(index)">{{ showName(item) }}</span>
       <router-link :to="item.path" v-else>{{ showName(item) }}</router-link>
     </li>
+    <b-button size="sm" variant="outline-primary" style="position: absolute; right: 20px">创建</b-button>
   </ol>
+</div>
 </template>
 
 <script>
